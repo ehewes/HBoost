@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --exec ts-node server.ts",
+    "create": "node scripts/create-route.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node:clean": "rm -rf node_modules && rm -rf package-lock.json && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/koa": "^3.0.0",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/node": "^24.5.2",
+    "jasmine": "^5.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@koa/router": "^14.0.0",
+    "@types/koa__router": "^12.0.4",
+    "dotenv": "^17.2.2",
+    "koa": "^3.0.1",
+    "koa-bodyparser": "^4.4.1",
+    "nodemon": "^3.1.10",
+    "zod": "^4.1.11"
+  }
+}
